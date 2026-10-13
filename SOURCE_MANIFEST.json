@@ -1,0 +1,16 @@
+{
+  "scope": "adaptation-specific owned experimental source only; no manuscript/data/weights",
+  "query_original_sha256": "fe7761c0d75633c11f15598dd2569e0d1ee77a5fe663e5671eacd1ebbea78e51",
+  "query_released_sha256": "fe7761c0d75633c11f15598dd2569e0d1ee77a5fe663e5671eacd1ebbea78e51",
+  "memory_original_source_sha256": "b66a932a7f0dbe6314b0044f516af308536f1ff98dd03c2b0e11b559eb2fe05d",
+  "memory_class_AST_verbatim": true,
+  "files": {
+    ".gitignore": "a3bf02a65a9305dfdb0083cef2cfe43d001ecbd2ba7281b7066cc04b6344d2a7",
+    "pyproject.toml": "fae57cc78d70f6fa5aa386b61d4568c6b6e19787cd0e597880d1314894df5aa9",
+    "README.md": "4b07e00671a3136bb42941016f8af8f47156f87bc4a7e4c675031a43605bad53",
+    "tests/smoke_modules.py": "3f2d1853a22b7e53cf70265f6648dcc3c2eb41100d640fc46f29cd1fac7f5d50",
+    "src/semantic_prefix_adaptation/memory.py": "190896cea0e61c70d5dfa838ceef6dba15152085fa5936f843540e340d09d4b9",
+    "src/semantic_prefix_adaptation/query.py": "fe7761c0d75633c11f15598dd2569e0d1ee77a5fe663e5671eacd1ebbea78e51",
+    "src/semantic_prefix_adaptation/__init__.py": "9d24cc1975616534bbc067715cf5d0bda4f55e512e0e61b912dc8aa6523e7fc5"
+  }
+}
