@@ -4,9 +4,19 @@ Adaptation-specific research code for frozen Sa2VA/SAM2 referring video object s
 
 ## Scope
 
-This initial release contains the query-conditioned high-resolution adapter (`Q`), the anchored multi-layer memory residual (`M`), and a CPU module smoke check. The query module is copied verbatim from the archived experimental implementation. The memory class is extracted verbatim, with its fixed prefix constant supplied locally. A source manifest documents this extraction.
+The installable package contains the query-conditioned high-resolution adapter (`Q`), the anchored multi-layer memory residual (`M`), and a CPU module smoke check. The query module is copied verbatim from the archived experimental implementation. The memory class is extracted verbatim, with its fixed prefix constant supplied locally. A source manifest documents this extraction.
 
 The native Sa2VA/SAM2 models, pretrained weights, training cache, dataset images/labels and full benchmark predictions are external dependencies. This repository does not yet provide a portable end-to-end training/evaluation launcher. Integration depends on the native decoder/memory interfaces described below; do not interpret the smoke check as benchmark reproduction.
+
+## Experiment source
+
+- [Joint prefix decoding and anchored memory refinement](work/prefix_joint_20260918/joint_forward.py)
+- [QFA implementation and decoder integration](work/query_highres_gate_20260914.py)
+- [Early/late QFA supervision](examples/archived_experiments/qfa_temporal_supervision_20261113/)
+- [Joint evaluation with early/late QFA and original AMR](examples/archived_experiments/temporal_qfa_amr_20261114/evaluate.py)
+- [MeViS v1 validation export reference](examples/eval_mevis_valid.py)
+
+These files capture the research implementation and experiment structure. The archived scripts also expect external model, dataset, checkpoint, and protocol files. Obtain the base implementation from [Sa2VA](https://github.com/bytedance/Sa2VA) and the pretrained base weights from [Sa2VA-InternVL3-2B](https://huggingface.co/ByteDance/Sa2VA-InternVL3-2B). The pretrained base weights, experiment checkpoints, and benchmark datasets are external to this source release.
 
 ## Install and check
 
